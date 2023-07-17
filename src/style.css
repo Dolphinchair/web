@@ -3,9 +3,10 @@ body{
     /* grid-template-columns:45vw 10vw 45vw; */
     grid-template-rows: 10vh 10vh 60vh 10vh;
     padding: 10px;
-    gap: 10px; 
+    gap: 10px;
     box-sizing: border-box;
     margin-bottom: 0 ;
+    overflow-x: hidden;
 }
 
 
