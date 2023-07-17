@@ -9,8 +9,11 @@ body{
 
 header{
     grid-row:1;
-    background-color: rgb(112, 216, 173);
+    display: flex;
+    background-color: rgb(98, 76, 47);
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 div{
@@ -24,11 +27,16 @@ article{
     /*grid-column-start: 1;
     grid-column-end: 3; */
 
-    background-color: aquamarine;
+    background-color: rgb(98, 76, 47);
 }
 
 footer{
     grid-row: 4;
+    display: flex;
+    background-color: rgb(168, 137, 94);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     /* grid-column-start: 1;
     grid-column-end: 3; */
 }
