@@ -2,7 +2,7 @@ body{
     display:grid;
     grid-template-rows: 10vh 5vh 70vh 15vh;
     margin: 0;
-    padding: 0
+    padding: 0;
     box-sizing: border-box;
     margin-bottom: 0 ;
     overflow-x: hidden;
