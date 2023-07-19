@@ -1,56 +1,70 @@
-body{
-    display:grid;
+body {
+    display: grid;
     grid-template-rows: 10vh 5vh 70vh 15vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     margin-bottom: 0 ;
     overflow-x: hidden;
-}
+  }
 
-
-header{
-    grid-row:1;
+  header {
+    grid-row: 1;
     display: flex;
     background-color: rgb(98, 76, 47);
     text-align: center;
     justify-content: center;
     align-items: center;
-}
+  }
 
-div{
+  div {
     grid-row: 2;
     /* grid-column-start: 1;
     grid-column-end: 3; */
-}
+  }
 
-article{
+  article {
     grid-row: 3;
     /*grid-column-start: 1;
     grid-column-end: 3; */
-
     background-color: rgb(98, 76, 47);
-}
+    overflow-x: auto;
+  }
 
-footer{
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  footer {
     grid-row: 4;
     background-color: rgb(168, 137, 94);
     /* grid-column-start: 1;
     grid-column-end: 3; */
-    display:grid;
+    display: grid;
     grid-template-columns: 50vw 50vw;
     box-sizing: border-box;
-}
+  }
 
-#footer-mail{
-    grid-column:1;
-    display:flex;
+  #footer-mail {
+    grid-column: 1;
+    display: flex;
     text-align: left;
-}
+  }
 
-#autre-contact{
-    grid-column:2;
+  #autre-contact {
+    grid-column: 2;
     display: flex;
     text-align: right;
     justify-content: flex-end;
-}
+  }

@@ -1,38 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initialscale=1.0">
+<html>
 <head>
-    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: 10vh 5vh 70vh 15vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      margin-bottom: 0 ;
+      overflow-x: hidden;
+    }
 
+    header {
+      grid-row: 1;
+      display: flex;
+      background-color: rgb(98, 76, 47);
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div {
+      grid-row: 2;
+      /* grid-column-start: 1;
+      grid-column-end: 3; */
+    }
+
+    article {
+      grid-row: 3;
+      /*grid-column-start: 1;
+      grid-column-end: 3; */
+      background-color: rgb(98, 76, 47);
+      overflow-x: auto;
+    }
+
+    .image-container {
+      display: flex;
+    }
+
+    .image-container img {
+      width: 33.33%;
+      object-fit: cover;
+    }
+
+    footer {
+      grid-row: 4;
+      background-color: rgb(168, 137, 94);
+      /* grid-column-start: 1;
+      grid-column-end: 3; */
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      box-sizing: border-box;
+    }
+
+    #footer-mail {
+      grid-column: 1;
+      display: flex;
+      text-align: left;
+    }
+
+    #autre-contact {
+      grid-column: 2;
+      display: flex;
+      text-align: right;
+      justify-content: flex-end;
+    }
+  </style>
 </head>
-
 <body>
-
-    <header>
-        TITRE
-    </header>
-    <div>
+  <header>Header</header>
+  <div>Content</div>
+  <article>
+    <div class="image-container">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
+      <img src="image5.jpg" alt="Image 5">
+      <img src="image6.jpg" alt="Image 6">
+      <img src="image7.jpg" alt="Image 7">
+      <img src="image8.jpg" alt="Image 8">
+      <img src="image9.jpg" alt="Image 9">
+      <img src="image10.jpg" alt="Image 10">
     </div>
-    <article>
-        <div class="image-container">
-        <img src="pictures/3visages.jpeg" alt="Image 1">
-        <img src="pictures/4femmes.jpeg" alt="Image 2">
-        <img src="pictures/abstrait.jpg" alt="Image 3">
-        <img src="pictures/chat.jpg" alt="Image 4">
-        <img src="pictures/chauva.jpg" alt="Image 5">
-        <img src="pictures/mona.jpg" alt="Image 6">
-        <img src="pictures/nuit.jpg" alt="Image 7">
-        <img src="pictures/tigre.jpg" alt="Image 8">
-        <img src="pictures/tournesol.jpg" alt="Image 9">
-        <img src="pictures/univers.jpg" alt="Image 10">
-        </div>
-    </article>
-    <footer>
-        <div id="footer-mail">ADRESSE.MAIL@MAIL.MAIL</div>
-        <div id="autre-contact">AUTRES CONTACTS</div>
-
-    </footer>
+  </article>
+  <footer>
+    <div id="footer-mail">Footer Mail</div>
+    <div id="autre-contact">Autre Contact</div>
+  </footer>
 </body>
-
 </html>
