@@ -1,76 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      display: grid;
-      grid-template-rows: 10vh 5vh 70vh 15vh;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      margin-bottom: 0 ;
-      overflow-x: hidden;
-    }
-
-    header {
-      grid-row: 1;
-      display: flex;
-      background-color: rgb(98, 76, 47);
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-    }
-
-    div {
-      grid-row: 2;
-      /* grid-column-start: 1;
-      grid-column-end: 3; */
-    }
-
-    article {
-      grid-row: 3;
-      /*grid-column-start: 1;
-      grid-column-end: 3; */
-      background-color: rgb(98, 76, 47);
-      overflow-x: auto;
-    }
-
-    .image-container {
-      display: flex;
-    }
-
-    .image-container img {
-      width: 33.33%;
-      object-fit: cover;
-    }
-
-    footer {
-      grid-row: 4;
-      background-color: rgb(168, 137, 94);
-      /* grid-column-start: 1;
-      grid-column-end: 3; */
-      display: grid;
-      grid-template-columns: 50vw 50vw;
-      box-sizing: border-box;
-    }
-
-    #footer-mail {
-      grid-column: 1;
-      display: flex;
-      text-align: left;
-    }
-
-    #autre-contact {
-      grid-column: 2;
-      display: flex;
-      text-align: right;
-      justify-content: flex-end;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>Header</header>
-  <div>Content</div>
+  <div id="div1">Content</div>
   <article>
     <div class="image-container">
       <img src="image1.jpg" alt="Image 1">

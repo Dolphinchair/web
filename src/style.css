@@ -1,70 +1,112 @@
-body {
-    display: grid;
-    grid-template-rows: 10vh 5vh 70vh 15vh;
+/*General CSS */
+
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    margin-bottom: 0 ;
-    overflow-x: hidden;
-  }
+}
 
-  header {
-    grid-row: 1;
-    display: flex;
+header,article{
     background-color: rgb(98, 76, 47);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+}
 
-  div {
-    grid-row: 2;
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-  }
-
-  article {
-    grid-row: 3;
-    /*grid-column-start: 1;
-    grid-column-end: 3; */
-    background-color: rgb(98, 76, 47);
-    overflow-x: auto;
-  }
-
-  .image-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 10px;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  footer {
-    grid-row: 4;
+footer{
     background-color: rgb(168, 137, 94);
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    box-sizing: border-box;
-  }
+}
 
-  #footer-mail {
-    grid-column: 1;
-    display: flex;
-    text-align: left;
-  }
+/*PC version */
 
-  #autre-contact {
-    grid-column: 2;
-    display: flex;
-    text-align: right;
-    justify-content: flex-end;
-  }
+@media (min-width: 640px) {
+    #div1{
+        display: block;
+    }
+    body {
+      display: grid;
+      grid-template-rows: 10vh 5vh 70vh 15vh;
+      box-sizing: border-box;
+      margin-bottom: 0 ;
+      overflow-x: hidden;
+    }
+
+    header {
+        grid-row: 1;
+        display: flex;
+  
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+    div {
+      grid-row: 2;
+    }
+
+    article {
+        grid-row: 3;
+        overflow-x: auto;
+      }
+
+    .image-container {
+      display: flex;
+    }
+
+    .image-container img {
+      width: 33.33%;
+      object-fit: cover;
+    }
+
+    footer {
+      grid-row: 4;
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      box-sizing: border-box;
+    }
+
+    #footer-mail {
+      grid-column: 1;
+      display: flex;
+      text-align: left;
+    }
+
+    #autre-contact {
+      grid-column: 2;
+      display: flex;
+      text-align: right;
+      justify-content: flex-end;
+    }
+}
+
+
+/* Mobile version*/
+
+@media (max-width: 640px) 
+{
+    #div1{
+        display: none;
+    }
+    body {
+        display: grid;
+        grid-template-rows: 10vh 75vh 15vh;
+        box-sizing: border-box;
+        margin-bottom: 0 ;
+        overflow-x: hidden;
+      }
+
+    header {
+        grid-row: 1;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+    article {
+        grid-row: 2;
+        overflow-x: auto;
+      }
+
+    footer {
+        grid-row: 3;
+        display: grid;
+        box-sizing: border-box;
+      }
+}
