@@ -6,11 +6,34 @@ body{
 }
 
 header,article{
-    background-color: rgb(42, 88, 131);
+    background-color: rgb(87, 131, 172);
+    font-family: URW Chancery L, cursive;
+    font-size: 30px;
+}
+
+#div1 {
+    background-color: rgb(133, 29, 29);
 }
 
 footer{
-    background-color: rgb(56, 72, 121);
+    background-color: rgb(133, 29, 29);
+}
+
+/* Ajouter la marge autour des images */
+.image-container img {
+  width: 33.33%;
+  object-fit: cover;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 5px;
 }
 
 /*PC version */
@@ -21,7 +44,7 @@ footer{
     }
     body {
       display: grid;
-      grid-template-rows: 10vh 5vh 75vh 10vh;
+      grid-template-rows: 10vh 1vh 81vh 8vh;
       box-sizing: border-box;
       margin-bottom: 0 ;
       overflow-x: hidden;
@@ -45,9 +68,9 @@ footer{
         overflow-x: auto;
       }
 
-    .image-container {
+    /* .image-container {
       display: flex;
-    }
+    } */
 
     .image-container img {
       width: 33.33%;
