@@ -8,7 +8,7 @@
     <script>
                 console.log(localStorage.getItem('tab_push'))
         function write_page(){
-        let tab_img=`<img src="${localStorage.getItem('tab_img')}"</img>`;
+        let tab_img = `<img src="${localStorage.getItem('tab_img')}"></img>`;
         let tab_info=`<p>${localStorage.getItem('name_tab')}<br>${localStorage.getItem('dim_tab')}<br>${localStorage.getItem('date_tab')}`;
         document.getElementById("div1").insertAdjacentHTML('beforeend',tab_img);
         document.getElementById("tab_info_p").insertAdjacentHTML('beforeend',tab_info);
