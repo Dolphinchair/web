@@ -1,0 +1,135 @@
+/*General CSS */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header,article{
+    background-color: rgb(87, 131, 172);
+    font-family: URW Chancery L, cursive;
+    font-size: 30px;
+}
+
+#div1 {
+    background-color: rgb(133, 29, 29);
+}
+
+footer{
+    background-color: rgb(133, 29, 29);
+}
+
+/* Ajouter la marge autour des images */
+.image-container img {
+  width: 33.33%;
+  object-fit: cover;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/*PC version */
+
+@media (min-width: 640px) {
+    #div1{
+        display: block;
+    }
+    body {
+      display: grid;
+      grid-template-rows: 10vh 1vh 81vh 8vh;
+      box-sizing: border-box;
+      margin-bottom: 0 ;
+      overflow-x: hidden;
+    }
+
+    header {
+        grid-row: 1;
+        display: flex;
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+    div {
+      grid-row: 2;
+    }
+
+    article {
+        grid-row: 3;
+        overflow-x: auto;
+      }
+
+    /* .image-container {
+      display: flex;
+    } */
+
+    .image-container img {
+      width: 33.33%;
+      object-fit: cover;
+    }
+
+    footer {
+      grid-row: 4;
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      box-sizing: border-box;
+    }
+
+    #footer-mail {
+      grid-column: 1;
+      display: flex;
+      text-align: left;
+    }
+
+    #autre-contact {
+      grid-column: 2;
+      display: flex;
+      text-align: right;
+      justify-content: flex-end;
+    }
+}
+
+
+/* Mobile version*/
+
+@media (max-width: 640px)
+{
+    #div1{
+        display: none;
+    }
+    body {
+        display: grid;
+        grid-template-rows: 10vh 75vh 15vh;
+        box-sizing: border-box;
+        margin-bottom: 0 ;
+        overflow-x: hidden;
+      }
+
+    header {
+        grid-row: 1;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+    article {
+        grid-row: 2;
+        overflow-x: auto;
+      }
+
+    footer {
+        grid-row: 3;
+        display: grid;
+        box-sizing: border-box;
+      }
+}
