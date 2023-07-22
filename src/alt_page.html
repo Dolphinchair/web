@@ -8,16 +8,22 @@
     <script src="./main.js"></script>
     <script>
         console.log(localStorage.getItem('tab_push'))
+        
         function write_page() {
-            let tab_img = `<img src="${localStorage.getItem('tab_img')}" class="article-image">`;
-            let tab_info = `<p>${localStorage.getItem('name_tab')}<br>${localStorage.getItem('dim_tab')}<br>${localStorage.getItem('date_tab')}</p>`;
+            let tab_img = `<img src="${JSON.parse(localStorage.getItem('tab_img'))}" class="article-image">`;
+            let tab_info = `<p>${JSON.parse(localStorage.getItem('name_tab'))}<br>${JSON.parse(localStorage.getItem('dim_tab'))}<br>${JSON.parse(localStorage.getItem('date_tab'))}</p>`;
             document.getElementById("article1").insertAdjacentHTML('beforeend', tab_img);
             document.getElementById("article1").insertAdjacentHTML('beforeend', tab_info);
         }
+        document.onreadystatechange = function() {
+    if (document.readyState == "complete") {
+        write_page();
+    }
+}
     </script>
 </head>
 
-<body onload="write_page()">
+<body>
 
     <header>
         <h1>Costantino.O</h1>

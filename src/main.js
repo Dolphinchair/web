@@ -82,10 +82,10 @@ let tableaux=
 
 function load_alt_page(tab_id){
 
-    localStorage.setItem('id_tab',tableaux[tab_id].id_tab)
-    localStorage.setItem('name_tab',tableaux[tab_id].name_tab)
-    localStorage.setItem('dim_tab',tableaux[tab_id].dim_tab)
-    localStorage.setItem('date_tab',tableaux[tab_id].date_tab);
-    localStorage.setItem('tab_img', tableaux[tab_id].tab_img);
+    localStorage.setItem('id_tab',JSON.stringify(tableaux[tab_id].id_tab));
+    localStorage.setItem('name_tab',JSON.stringify(tableaux[tab_id].name_tab));
+    localStorage.setItem('dim_tab',JSON.stringify(tableaux[tab_id].dim_tab));
+    localStorage.setItem('date_tab',JSON.stringify(tableaux[tab_id].date_tab));
+    localStorage.setItem('tab_img', JSON.stringify(tableaux[tab_id].tab_img));
     window.location = "./alt_page.html";
 }
